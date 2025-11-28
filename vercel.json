@@ -1,0 +1,17 @@
+{
+    "rewrites": [
+      {
+        "source": "/(.*).lua",
+        "destination": "/$1.txt"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/(.*).lua",
+        "headers": [
+          { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+        ]
+      }
+    ]
+  }
+  
